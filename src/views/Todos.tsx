@@ -1,7 +1,7 @@
 import { Flex, FlexProps, Heading, useColorModeValue } from '@chakra-ui/react'
 import {motion, Variants} from 'framer-motion'
-import TodoList from './Components/TodoList'
-import { todos } from './utils/todos'
+import TodoList from '../Components/TodoList'
+import { todos } from '../utils/todos'
 
 const MotionFlex = motion<FlexProps>(Flex);
 
@@ -19,7 +19,7 @@ const variants: Variants = {
   }
 }
 
-function App() {
+function TodosPage() {
   const appBackground = useColorModeValue("gray.100", "gray.700")
 
   return (
@@ -38,4 +38,4 @@ function App() {
   )
 }
 
-export default App
+export default TodosPage
