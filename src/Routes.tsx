@@ -1,16 +1,15 @@
-import { Heading } from "@chakra-ui/react";
-import { BrowserRouter, Link, Route } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import { AnimatedRoutes, RouteTransition } from "./Components/TransitionRoute";
+import IndexPage from "./views/IndexPage";
 import TodosPage from "./views/Todos";
 
 export default function Routes() {
   return (
     <BrowserRouter>
-      <AnimatedRoutes>
+      <AnimatedRoutes initial={true}>
         <Route path="/" element={
           <RouteTransition slideUp={10}>
-            <Heading>Welcome to main page!</Heading>
-            <Link to="/todos">Check your todos now!</Link>
+            <IndexPage />
           </RouteTransition>
         }/>
         <Route path="/todos" element={
