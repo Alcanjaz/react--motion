@@ -7,9 +7,7 @@ import Routes from './Routes'
 ReactDOM.render(
   <React.StrictMode>
     <ChakraProvider>
-      <Layout>
-        <Routes />
-      </Layout>
+      <Routes />
     </ChakraProvider>
   </React.StrictMode>,
   document.getElementById('root')

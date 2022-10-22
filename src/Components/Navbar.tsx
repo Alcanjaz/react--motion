@@ -1,5 +1,6 @@
 import { Box, Flex, Heading, IconButton, Stack, useColorMode, useColorModeValue } from "@chakra-ui/react"
 import {MoonIcon, SunIcon} from "@chakra-ui/icons"
+import { Link } from "react-router-dom"
 
 export default function Navbar() {
   const {toggleColorMode, colorMode} = useColorMode()
@@ -8,9 +9,9 @@ export default function Navbar() {
   return (
     <Box bg={navBackground} position="fixed" px={4} w="100%">
       <Flex h={16} alignItems="center" justifyContent="space-between">
-        <Box>
+        <Link to="/">
           <Heading>Logo</Heading>
-        </Box>
+        </Link>
         <Flex alignItems="center">
           <Stack direction="row" spacing={7}>
             <IconButton aria-label="color mode" onClick={toggleColorMode} icon={colorMode === 'light' ? <SunIcon /> : <MoonIcon />}/>

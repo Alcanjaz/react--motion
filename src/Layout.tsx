@@ -1,9 +1,9 @@
 import { Box, Flex, Stack } from "@chakra-ui/react";
-import {ReactNode} from "react";
+import { ReactNode } from "react";
 import Navbar from "./Components/Navbar";
 
-interface Props {
-  children: ReactNode
+type Props = {
+  children: ReactNode,
 }
 
 export default function Layout({children}: Props) {

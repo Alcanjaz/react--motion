@@ -1,5 +1,5 @@
-import { Flex, Heading, Link } from "@chakra-ui/react";
-import { Link as ReachLink } from "react-router-dom";
+import { Flex, Heading, Link } from "@chakra-ui/react"
+import { Link as ReachLink } from "react-router-dom"
 
 
 export default function IndexPage() {
